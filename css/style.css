@@ -93,3 +93,13 @@ display: none;
 .demographic-dd{
     width: 100%;
 }
+
+.demographic-chart{
+    border: 1px solid #e6e6e6;
+    margin-top: 15px;
+}
+
+.hdx-img{
+    display: block;
+    margin: auto;
+}
