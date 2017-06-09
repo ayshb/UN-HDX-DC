@@ -50,7 +50,7 @@ var projection = d3.geo.mercator()
 
 var path = d3.geo.path().projection(projection);
 
-var svg = d3.select("#map").append("svg").attr("width", width).attr("height", height);
+var svg2 = d3.select("#map").append("svg").attr("width", width).attr("height", height);
 
 d3.json("https://raw.githubusercontent.com/aayushrijal/Nepal-district-topojson/master/nepal-districts.topojson", function(error, ok) {
     var counties = topojson.feature(ok, ok.objects.districts);
@@ -61,7 +61,7 @@ d3.json("https://raw.githubusercontent.com/aayushrijal/Nepal-district-topojson/m
             valueById[d.district] = d.value;
         });
         //counties
-        svg.append("g")
+        svg2.append("g")
             .attr("class", "county")
             .selectAll("path")
             .data(counties.features)
@@ -80,7 +80,7 @@ d3.json("https://raw.githubusercontent.com/aayushrijal/Nepal-district-topojson/m
             .domain([0, 1e6])
             .range([0, 20]);
 
-        svg.selectAll("circle")
+        svg2.selectAll("circle")
             .data(counties.features)
             .enter()
             .append("svg:circle")
@@ -113,7 +113,7 @@ d3.json("https://raw.githubusercontent.com/aayushrijal/Nepal-district-topojson/m
             });
 
         //county borders
-        svg.append("path").datum(topojson.mesh(ok, ok.objects.districts, function(a, b) {
+        svg2.append("path").datum(topojson.mesh(ok, ok.objects.districts, function(a, b) {
             return a !== b;
         })).attr("class", "county-border").attr("d", path);
     });
