@@ -1,104 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bootstrap 3, from LayoutIt!</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="Source code generated using layoutit.com">
-    <meta name="author" content="LayoutIt!">
+  <title>Bootstrap 3, from LayoutIt!</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+  <meta name="description" content="Source code generated using layoutit.com">
+  <meta name="author" content="LayoutIt!">
 
-  </head>
-  <body>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
 
-    <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="jumbotron">
-				<h2>
-					HDX DC
-				</h2>
-				<p>
-					The April 2015 Nepal earthquake killed nearly 9,000 people and injured nearly 22,000. Hundreds of thousands of people were made homeless with entire villages flattened, across many districts of the country. Volunteers used crisis mapping to help plan emergency aid work. Local organization Kathmandu Living Labs helped coordinate local knowledge on the ground and collaborated with international crisis mapping and humanitarian organizations. Public volunteers from around the world participated in crowdmapping and added details into online maps. Information was mapped from data input from social media, satellite pictures[147] and drones[139] of passable roads, collapsed houses, stranded, shelterless and starving people, who needed help, and from messages and contact details of people willing to help.[148] On-site volunteers verified these mapping details wherever they could to reduce errors.
-				</p>
-				<p>
-					<a class="btn btn-primary btn-large" href="#">Learn more</a>
-				</p>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="row">
-						<div class="col-md-6">
-							<h2>
-								Heading
-							</h2>
-							<p>
-								Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-							</p>
-							<p>
-								<a class="btn" href="#">View details »</a>
-							</p>
-							<ul>
-								<li>
-									Lorem ipsum dolor sit amet
-								</li>
-								<li>
-									Consectetur adipiscing elit
-								</li>
-								<li>
-									Integer molestie lorem at massa
-								</li>
-								<li>
-									Facilisis in pretium nisl aliquet
-								</li>
-								<li>
-									Nulla volutpat aliquam velit
-								</li>
-								<li>
-									Faucibus porta lacus fringilla vel
-								</li>
-								<li>
-									Aenean sit amet erat nunc
-								</li>
-								<li>
-									Eget porttitor lorem
-								</li>
-							</ul>
-						</div>
-						<div class="col-md-6">
-							<select onChange="drawHistogram(this.value);">
-							  <option value="--">-- select option --</option>
-							  <option value="thresholds">Use thresholds</option>
-							  <option value="nrBins">Use number of bins (5)</option>
-							</select>
-							<div id="demog"></div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<canvas id="myChart" width="400" height="200"></canvas>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-						<div id="map"></div>
-								<div id="tooltip" class="hidden">
-							<p><span id="value"></span></p>
-						</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-		<script src="https://d3js.org/d3.v3.min.js"></script>
-		<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
-		<script type="application/json" id="data">
-[
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6">
+                <div style="display: inline;">
+                  <div class="kpi" style="width:100%; height:100px; color: gray; border: 1px solid black">
+                    <span>KPI Score Indicating X</span>
+                    <span class='kpi-score'> 45% </span>
+                    <!--<i class="fa fa-smile-o fa-3x" aria-hidden="true"></i>-->
+                  </div>
+                  <div class="kpi" style="width:100%; height:100px; color: gray; border: 1px solid black">
+                    <span>KPI Score Indicating Y</span>
+                    <span class='kpi-score'>47%</span>
+                    <!--<i class="fa fa-meh-o fa-3x" aria-hidden="true"></i>-->
+                  </div>
+                </div>
+
+                <div class="list-items">
+                  <span class='list-title'>Top 5 Needs (Select a need to filter)</span>
+                  <div class="list-item">Need 1</div>
+                  <div class="list-item">Need 2</div>
+                  <div class="list-item">Need 3</div>
+                  <div class="list-item">Need 4</div>
+                  <div class="list-item">Need 5</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="demographic-dd">
+                  <select style="width: 100%">
+                    <option value = 'Option 1'>Demographic 1</option>
+                    <option value = 'Option 2'>Demographic 2</option>
+                    <option value = 'Option 3'>Demographic 3</option>
+                    <option value = 'Option 4'>Demographic 4</option>
+                </select>
+              </div>
+              <div class ='demographic-chart'>
+                Chart content goes here
+              </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <canvas id="myChart" width="400" height="200"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div id="map"></div>
+            <div id="tooltip" class="hidden">
+              <p><span id="value"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+  <script type="application/json" id="data">
+    [
   {
     "letter":"A",
     "frequency":0.08167
@@ -204,6 +188,7 @@
     "frequency":0.00074
   }
 ]
+
 </script>
 		<script src="https://d3js.org/topojson.v1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.min.js"></script>
@@ -212,5 +197,7 @@
     <script src="js/taffy-min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="data/survey_data.json"></script>
-  </body>
+    <script src="js/scripts.js"></script>
+    <script src="js/demographicChart.js"></script>
+</body>
 </html>

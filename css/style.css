@@ -49,3 +49,47 @@ display: none;
   fill: #fff;
   font: 10px sans-serif;
 }
+
+.list-item{
+    background-color: lightgray;
+    margin: 5px 2px;
+    padding: 3px;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+}
+
+.list-items{
+    margin-top: 15px;
+    border: 2px solid black;
+}
+
+.list-title{
+    margin: 15px;
+    font-weight: bold;
+    border-bottom: 2px double black;
+    text-align: center;
+    margin: auto;
+    display:block;
+
+}
+
+.kpi{
+    vertical-align: center;
+}
+
+.kpi-score{
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.list-item:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+
+.demographic-dd{
+    width: 100%;
+}
