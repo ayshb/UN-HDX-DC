@@ -1,13 +1,6 @@
 // Empty JS for your own code to be here
-$.getJSON('data/survey_data.json', function(data) {
-  console.log(data);
-});
-var survey = TAFFY(data);
-console.log(survey);
-
-// TaffyDB quries 
-//console.log("Collection of all distinct locations in Nepal");
-//console.log(survey().distinct("LOCATION")); 
+console.log(survey_data);
+var survey = TAFFY(survey_data);
 
 var canvas = document.getElementById('myChart');
 var data = {

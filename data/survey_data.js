@@ -1,4 +1,4 @@
-[
+var survey_data = [
   {
     "COUNTRY": "Nepal",
     "LOCATION": "Lalitpur",
@@ -10988,4 +10988,4 @@
     "QUESTION 4": "Q4 #4",
     "QUESTION 5": "Q5 #2"
   }
-]
+];
