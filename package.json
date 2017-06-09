@@ -1,0 +1,19 @@
+{
+  "name": "hdx-survey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayshb/UN-HDX-DC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayshb/UN-HDX-DC/issues"
+  },
+  "homepage": "https://github.com/ayshb/UN-HDX-DC#readme"
+}
