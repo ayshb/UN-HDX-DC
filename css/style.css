@@ -72,3 +72,24 @@ display: none;
     display:block;
 
 }
+
+.kpi{
+    vertical-align: center;
+}
+
+.kpi-score{
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.list-item:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+
+.demographic-dd{
+    width: 100%;
+}
