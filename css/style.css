@@ -1,0 +1,51 @@
+# Empty CSS file for your own CSS
+#map{
+    margin-top: 50px;
+    text-align: center;
+}
+.county-border {
+    fill: none;
+    stroke: white;
+}
+.axis text {
+    font: 10px sans-serif;
+}
+
+.axis line, .axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+#key	{
+    position: absolute;
+    top:90px;
+    left: 50px;
+
+}
+#tooltip {
+position: absolute;
+padding: 10px;
+background-color: #ccc;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+border-radius: 5px;
+-webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+-moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+pointer-events: none;
+}
+
+#tooltip.hidden {
+display: none;
+}
+
+.bar rect {
+  fill: steelblue;
+}
+
+.bar text {
+  fill: #fff;
+  font: 10px sans-serif;
+}
